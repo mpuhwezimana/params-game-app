@@ -1,18 +1,2 @@
 <h1> Welcome to Guess The Number Game!" </h1>
-<%=
-answer = rand(100)
-
-10.times do
-  
-  puts "Please guess a number:"
-  @message = gets.chomp.to_i
-  if @message == answer
-    puts "You've won!"
-    break
-  elsif @message < answer
-    puts "Guess higher!"
-  elsif @message > answer
-    puts "Guess lower."
-  end
-end
-%>    
+<%= @message %>
