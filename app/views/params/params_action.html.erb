@@ -1,1 +1,14 @@
 <h1> Your name is <%= @message %></h1>
+
+<h1><%= answer = 36
+
+10.times do
+  if @message == answer
+    puts "You've won!"
+  break
+  elsif @message < answer
+    puts "Guess higher!"
+  elsif @message > answer
+    puts "Guess lower."
+  end
+end%></h1>

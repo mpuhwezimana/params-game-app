@@ -5,20 +5,8 @@ class ParamsController < ApplicationController
   end
 
   def guess_game
-    @message = params[:message].to_i
-  
-    answer = 36
+    @message = params[:message].to_i 
 
-    10.times do
-      if @message == answer
-        puts "You've won!"
-        break
-      elsif @message < answer
-        puts "Guess higher!"
-      elsif @message > answer
-        puts "Guess lower."
-      end
-    end
     render "guess_game.html.erb"
   end 
 
